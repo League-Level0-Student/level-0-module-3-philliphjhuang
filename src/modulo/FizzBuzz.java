@@ -26,12 +26,12 @@ package modulo;
 public class FizzBuzz {
 	public static void main(String[] args) {
 		for (int x = 1; x <= 20; x++) {
-			if (x % 3 == 0) {
-				System.out.println("fizz");
+			if ((x % 5 == 0) && (x % 3 == 0)) {
+				System.out.println("fizzbuzz");
 			} else if (x % 5 == 0) {
 				System.out.print("buzz");
-			} else if (x % 5 == 0 || x % 3 == 0) {
-				System.out.print("fizzbuzz");
+			} else if (x % 3 == 0) {
+				System.out.print("fizz");
 			} else {
 				System.out.print(x);
 			}
